@@ -38,6 +38,7 @@ namespace LED_RACE_communiquer{
     //% block="afficher LED joueur 1"
 	//% weight=99 blockGap=24
     export function led_joueur1(): void {
+        let strip = neopixel.create(DigitalPin.P12, 30, NeoPixelMode.RGB) 
         strip.setPixelColor(0, 0)        
     }
 
